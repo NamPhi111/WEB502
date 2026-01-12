@@ -43,3 +43,25 @@ status = "success"; // Hợp lệ
 // status = "failed"; // Lỗi
 
 //9. Null và Undefined
+let value: string | null = null;
+let score: number | undefined = undefined;
+
+//10. Unknown và Any
+let input: unknown = 42;
+if (typeof input === "number") {
+  let num: number = input; // Hợp lệ sau khi kiểm tra kiểu
+}
+let data: any = 10;
+let num: number = data; // Không cần kiểm tra, nhưng không an toàn
+
+//11. Type Assertions
+let someValue: any = "This is a string";
+let strLength: number = (someValue as string).length;
+// Hoặc sử dụng cú pháp <>
+let strLength2: number = (<string>someValue).length; 
+
+
+
+
+
+

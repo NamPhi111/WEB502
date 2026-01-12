@@ -32,4 +32,18 @@ let status;
 status = "success"; // Hợp lệ
 // status = "failed"; // Lỗi
 //9. Null và Undefined
+let value = null;
+let score = undefined;
+//10. Unknown và Any
+let input = 42;
+if (typeof input === "number") {
+    let num = input; // Hợp lệ sau khi kiểm tra kiểu
+}
+let data = 10;
+let num = data; // Không cần kiểm tra, nhưng không an toàn
+//11. Type Assertions
+let someValue = "This is a string";
+let strLength = someValue.length;
+// Hoặc sử dụng cú pháp <>
+let strLength2 = someValue.length;
 //# sourceMappingURL=typescript.js.map
