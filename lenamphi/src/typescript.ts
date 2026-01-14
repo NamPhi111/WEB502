@@ -60,7 +60,16 @@ let strLength: number = (someValue as string).length;
 // Hoặc sử dụng cú pháp <>
 let strLength2: number = (<string>someValue).length; 
 
+//2.3 Interface cho function  
+interface Person {
+  name: string;
+  age: number;
+}
 
+const user: Person = {
+  name: "Hòa",
+  age: 25,
+};
 
 
 

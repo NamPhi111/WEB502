@@ -46,4 +46,8 @@ let someValue = "This is a string";
 let strLength = someValue.length;
 // Hoặc sử dụng cú pháp <>
 let strLength2 = someValue.length;
+const user = {
+    name: "Hòa",
+    age: 25,
+};
 //# sourceMappingURL=typescript.js.map
